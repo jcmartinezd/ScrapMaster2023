@@ -1,0 +1,337 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --blanco: #ffffff;
+    --negro: #000000;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */  
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0; 
+}
+
+
+/** Globales **/
+.contenedor {
+    width: min(50%, 120rem);
+    margin: 0 auto; 
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+/** Header **/
+
+.header {
+    background-image: url('../img/banner.jpg');
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header_texto {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 5rem;
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: flex;
+        gap: 2rem;
+    }
+}
+.navegacion_enlace {
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
+}
+
+
+.titulo {
+    padding-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .titulo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    color: var(--blanco);
+    
+}
+.logo_nombre {
+    font-weight: 400;
+}
+.logo_bold {
+    font-weight: 700;
+}
+
+.footer {
+    background-color: var(--negro);
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+}
+
+/*
+/////////////////////////////////////////
+*/
+
+.contenido-principal{
+    padding-top: 50px;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 1370px) {
+    .contenido-principal  {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+.container {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+}
+
+.box {
+    display: flex;
+    flex-direction: center;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+@media (max-width: 1370px) {
+    .container  {
+        width: 100%;
+        height: 600px;
+    }
+}
+
+.preguntas{
+    color: white;
+    
+}
+
+
+
+/*Botones*/
+
+.botones{
+    margin: 10px;
+    padding: 90px 150px;
+    background-color: #3498db;
+    color: var(--blanco);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.1s;
+}
+
+.boton-siguiente{
+    margin: 120px;
+    padding: 15px 30px;
+    background-color: #0096fa;
+    border: none;
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+.boton-enviar{
+    margin: 120px;
+    padding: 15px 30px;
+    background-color: #fa5700;
+    border: none;
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+@media (max-width: 1370px) {
+    .botones {
+        padding: 90px 150px;
+    }
+}
+
+.botones:hover,.boton-siguiente:hover{
+    background-color: #2980b9;
+}
+
+
+.opcion.seleccionado {
+    background-color: #555; 
+}
+
+/*Botones Marcas*/
+
+.boton-samsung {
+    background-image: url('../img/samsung.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-apple {
+    background-image: url('../img/apple.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-motorola {
+    background-image: url('../img/motorola.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-xiaomi {
+    background-image: url('../img/xiaomi.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+/*Botones Precios*/
+
+.boton-500 {
+    background-image: url('../img/boton-500.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-mil {
+    background-image: url('../img/boton-mil.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-dosmil {
+    background-image: url('../img/boton-dosmil.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-masdosmil {
+    background-image: url('../img/boton-masdosmil.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+
+/*Botones almacenamiento*/
+
+.boton-32 {
+    background-image: url('../img/boton-32.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-64 {
+    background-image: url('../img/boton-64.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-128 {
+    background-image: url('../img/boton-128.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-512 {
+    background-image: url('../img/boton-512.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+/*Botones RAM*/
+
+.boton-4ram{
+    background-image: url('../img/boton-4ram.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-6ram{
+    background-image: url('../img/boton-6ram.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+.boton-8ram{
+    background-image: url('../img/boton-8ram.png');
+    background-position: center;   
+    background-repeat: no-repeat; 
+}
+
+/*Contacto*/
+
+.image-container {
+    display: flex;
+    flex-direction: center;
+    padding-top: 80px;
+    align-items: center;
+    justify-content: center;
+    color: var(--blanco);
+    
+}
+
+.image {
+    margin: 50px;
+}
+.qr{
+    float: right;
+}
