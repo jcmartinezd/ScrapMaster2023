@@ -4,6 +4,7 @@ const botonSiguiente = document.getElementById("botonSiguiente");
 const nuevoBotonEnviar = document.createElement("button");
 
 
+
 var Opcion1 = document.getElementById("opcion1");
 var Opcion2 = document.getElementById("opcion2");
 var Opcion3 = document.getElementById("opcion3");
